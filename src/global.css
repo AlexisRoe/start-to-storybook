@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 *,
 *::after,
@@ -12,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 0;
   background-color: #383b49;
   color: #ffffff;
@@ -22,7 +21,7 @@ input,
 button,
 select,
 optgroup,
-textarea, h1 {
+textarea {
   margin: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }

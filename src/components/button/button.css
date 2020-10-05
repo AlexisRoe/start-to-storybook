@@ -16,16 +16,8 @@
 }
 
 .btn-play {
-  height: 23px;
-  width: 75px;
   background: linear-gradient(180deg, #ED8770,#D9519D);
-  font-size: 8px;
   border: none;
-  border-radius: 20px;
   padding: 5px 20px 5px 20px;
-  color: white;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
 }
 

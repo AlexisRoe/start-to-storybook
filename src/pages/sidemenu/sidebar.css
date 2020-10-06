@@ -2,6 +2,7 @@
   width: 375px;
   height: 812px;
   border: 1px solid rgba(255,255,255,.2);
+  overflow: hidden;
 }
 
 .side-nav {
@@ -88,3 +89,4 @@
   flex-direction: column;
   align-items: center;
 }
+

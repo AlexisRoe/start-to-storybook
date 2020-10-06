@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 1.2rem;
+  font-size: .8rem;
+  letter-spacing: 0.01rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.btn > span {
+  margin-bottom: 0.01rem;
+}
+
+.btn > :nth-child(1) {
+  margin-right: .5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ed8770, #d9519d);
+  border: none;
+}

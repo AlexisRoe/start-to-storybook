@@ -1,0 +1,21 @@
+.album {
+  width: 100%;
+  color: #c1c0c0;
+  font-size: 0.7rem;
+}
+
+.album > img {
+  width: 100%;
+  height: auto;
+}
+
+.album-title {
+  color: #eeeeee;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+  }

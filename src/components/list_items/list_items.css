@@ -5,11 +5,11 @@
   align-items: center;
   justify-content: flex-start;
   background-color: #10121d;
-  min-width: 280px;
+  min-width: 17rem;
 }
 
 .menu_list_item > :nth-child(1) {
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 
 .menuText {
@@ -23,7 +23,7 @@
   content: "";
   width: 100%;
   height: 0.02rem;
-  background-color: rgba(56,60,72,0.8);
+  background-color: rgba(56,60,72,0.4);
   position: absolute;
   bottom: -1.2rem;
   left: 0px;

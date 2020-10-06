@@ -1,20 +1,17 @@
 .btn {
   border-radius: 1.2rem;
-  font-size: .5rem;
+  font-size: .8rem;
   letter-spacing: 0.01rem;
   display: flex;
   align-items: center;
   color: white;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 .btn > :nth-child(1) {
   margin-right: .5rem;
-}
-
-.btn-outline {
-  border: 1px solid white;
-  background-color: transparent;
 }
 
 .btn-primary {

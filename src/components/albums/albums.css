@@ -1,6 +1,5 @@
 .album {
-  width: 156px;
-  height: 224px;
+  width: 100%;
   color: #c1c0c0;
   font-size: 0.7rem;
 }
@@ -17,6 +16,6 @@
 .line {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
   }

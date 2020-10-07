@@ -30,7 +30,12 @@
   margin-bottom: 5px;
 }
 
-/* Test SVG extern mit einem Gradient zu füllen
-.footer-nav-item > img[src$=".svg"]{
-  fill: url('../../assets/gradient.svg#gradient');
-} */
+.txt-gradient {
+  background: -webkit-linear-gradient(270deg, #ed8770, #d9519d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txt-active {
+  color: #D9519D;
+}

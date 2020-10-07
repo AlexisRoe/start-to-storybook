@@ -15,18 +15,18 @@
   color: #63666e;
   font-size: 0.8rem;
   text-decoration: none;
-  filter:grayscale(1);
+  filter: grayscale(1);
 }
 
 .footer-nav-item > img {
   margin-bottom: 5px;
 }
 
-.txt-gradient {
+/* .txt-gradient {
   background: -webkit-linear-gradient(270deg, #ed8770, #d9519d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .nav-active {
   color: #d9519d;

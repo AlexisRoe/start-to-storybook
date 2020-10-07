@@ -31,15 +31,17 @@
 
 .stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: #c1c0c0;
   font-size: 0.75rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  max-width: 200px;
 }
 
 .stats-unit {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 1.2rem;
 }

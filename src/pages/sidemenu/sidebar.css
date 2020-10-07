@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.side-nav-head > .logo > img {
+#logo {
   width: 5rem;
 }
 

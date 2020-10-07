@@ -1,7 +1,7 @@
 .footer-nav {
   min-height: 60px;
   width: 100vw;
-  box-shadow: 11px 3px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
   padding: 20px 15px;
   display: flex;

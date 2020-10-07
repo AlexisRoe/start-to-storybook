@@ -1,27 +1,18 @@
-.footer {
-  width: 100%;
-  /* border: 1px solid white; */
-  box-shadow: 11px 3px 25px rgba(0, 0, 0, 0.7);
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-}
-
 .footer-nav {
   min-height: 60px;
-  width: 100%;
+  width: 100vw;
+  /* border: 1px solid white; */
+  box-shadow: 11px 3px 25px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  padding: 20px 15px;
   display: flex;
   justify-content: center;
 }
 
 .footer-nav-item {
   margin: 0px 20px;
-  padding: 10px 0px;
-  min-width: 45px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: #63666e;
   font-size: 0.8rem;
 }
@@ -37,5 +28,5 @@
 }
 
 .txt-active {
-  color: #D9519D;
+  color: #d9519d;
 }

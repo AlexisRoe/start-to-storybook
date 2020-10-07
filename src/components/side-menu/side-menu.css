@@ -1,11 +1,11 @@
 .menu_list_item {
   list-style: none;
   padding: 1rem 0.5rem 1rem 1.2rem;
+  background-color: #10121d;
+  letter-spacing: 0.1rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #10121d;
-  letter-spacing: 0.1rem;
 }
 
 .menu_list_item > :nth-child(1) {
@@ -36,6 +36,8 @@
   font-size: 0.75rem;
   width: 100%;
   max-width: 200px;
+  padding-left: 0.1em;
+  margin: 0;
 }
 
 .stats-unit {

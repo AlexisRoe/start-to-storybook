@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   /* border: 1px solid white; */
   box-shadow: 11px 3px 25px rgba(0, 0, 0, 0.7);
@@ -15,17 +15,22 @@ footer {
 }
 
 .footer-nav-item {
-  margin: 0px 25px;
+  margin: 0px 20px;
   padding: 10px 0px;
   min-width: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #63666E;
-  font-size: .8rem;
+  color: #63666e;
+  font-size: 0.8rem;
 }
 
-.footer-nav-item > img{
+.footer-nav-item > img {
   margin-bottom: 5px;
 }
+
+/* Test SVG extern mit einem Gradient zu füllen
+.footer-nav-item > img[src$=".svg"]{
+  fill: url('../../assets/gradient.svg#gradient');
+} */

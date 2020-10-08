@@ -1,7 +1,7 @@
 .album {
   width: 100%;
   color: #c1c0c0;
-  font-size: 0.7rem;
+  font-size: var(--font-small-sub);
 }
 
 .album > img {
@@ -14,8 +14,8 @@
 }
 
 .line {
-    display: flex;
-    justify-content: space-between;
-    margin-top: .8rem;
-    margin-bottom: .8rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}

@@ -12,7 +12,7 @@
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
-  color: #63666e;
+  color: var(--color-subtext);
   font-size: 0.8rem;
   text-decoration: none;
   filter: grayscale(1);
@@ -29,6 +29,6 @@
 } */
 
 .nav-active {
-  color: #d9519d;
+  color: var(--color-active);
   filter: grayscale(0);
 }

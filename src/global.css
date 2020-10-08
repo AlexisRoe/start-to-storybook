@@ -8,12 +8,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-family: "Circular Std", sans-serif;
+  --font-small-sub: 0.8rem;
+  --letter-spacing: 0.01rem;
+  --color-active: #d9519d;
+  --color-bars: #ed8770;
+  --color-subtext: #63666e;
+  --color-subtext-middle: #585a66;
+  --color-subtect-dark: #383b49;
+  --color-orange: #e1914b;
+  --color-subtext-white: rgba(255, 255, 255, 0.8);
+  --color-bg-sidemenu-body: rgba(56, 60, 72, 0.4);
+  --color-gradient: linear-gradient(180deg, #ed8770, #d9519d);
+  --color-gradient-dark: linear-gradient(180deg, #c35bd1, #657ddf);
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   /* background-color: #383b49; */
   background-color: #181b2c;
@@ -26,6 +42,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
 }

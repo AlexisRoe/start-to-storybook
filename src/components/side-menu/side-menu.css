@@ -1,11 +1,15 @@
-.menu_list_item {
+.list-row {
   list-style: none;
+}
+
+.menu_list_item {
   padding: 1rem 0.5rem 1rem 1.2rem;
   background-color: #10121d;
   letter-spacing: var(--letter-spacing);
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  text-decoration: none;
 }
 
 .menu_list_item > :nth-child(1) {

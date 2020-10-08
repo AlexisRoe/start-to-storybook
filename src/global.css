@@ -8,12 +8,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-family: "Circular Std", sans-serif;
+  --color-active: #d9519d;
+  --color-subtext: #63666e;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   /* background-color: #383b49; */
   background-color: #181b2c;
@@ -26,6 +32,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
 }

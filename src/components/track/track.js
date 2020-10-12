@@ -1,5 +1,6 @@
-import imageDog from "../../assets/dog.jpg"; // import picture for appending
-import playIcon from "../../assets/icon-play-color.svg"; // import picture for appending
+import "./track.css";
+import imageDog from "../../assets/dog.jpg";
+import playIcon from "../../assets/icon-play-color.svg";
 
 export function createTrackElement() {
     const artist = "Michael Jackson";
@@ -13,7 +14,7 @@ export function createTrackElement() {
     const imgArtist = document.createElement("img");
     imgArtist.src = imageDog; // for demo purposes
     imgArtist.alt = `artist - ${artist}`;
-    imgArtist.classList.add("imgArtist"); // add class of name artist to image
+    imgArtist.classList.add("imgArtist");
 
     listItem.appendChild(imgArtist);
 
@@ -21,9 +22,9 @@ export function createTrackElement() {
     const albumInformation = document.createElement("div");
     albumInformation.classList.add ("albumInformation");
     const albumSpan = document.createElement("span");
-    albumSpan.innerHTML = title; // for demo purposes
+    albumSpan.innerHTML = title;
     const artistSpan = document.createElement("span");
-    artistSpan.innerHTML = artist; // for demo purposes
+    artistSpan.innerHTML = artist;
     
     albumInformation.appendChild(albumSpan);
     albumInformation.appendChild(artistSpan);
@@ -31,7 +32,7 @@ export function createTrackElement() {
 
     // play-button
     const playButton = document.createElement("button");
-    playButton.type = "submit"; // type definition
+    playButton.type = "submit";
     playButton.classList.add("playButton");
     const playImage = document.createElement("img");
     playImage.src = playIcon;

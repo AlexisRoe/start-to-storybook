@@ -7,6 +7,7 @@ export function createTrackElement() {
 
     /* Container */
     const listItem = document.createElement("li");
+    listItem.classList.add("track");
 
     // artist picture
     const imgArtist = document.createElement("img");
@@ -17,18 +18,21 @@ export function createTrackElement() {
     listItem.appendChild(imgArtist);
 
     // metadata
-    const songContainer = document.createElement("div");
+    const albumInformation = document.createElement("div");
+    albumInformation.classList.add ("albumInformation");
     const albumSpan = document.createElement("span");
     albumSpan.innerHTML = title; // for demo purposes
     const artistSpan = document.createElement("span");
     artistSpan.innerHTML = artist; // for demo purposes
     
-    songContainer.appendChild(albumSpan, artistSpan);
-    listItem.appendChild(songContainer);
+    albumInformation.appendChild(albumSpan);
+    albumInformation.appendChild(artistSpan);
+    listItem.appendChild(albumInformation);
 
     // play-button
     const playButton = document.createElement("button");
     playButton.type = "submit"; // type definition
+    playButton.classList.add("playButton");
     const playImage = document.createElement("img");
     playImage.src = playIcon;
 

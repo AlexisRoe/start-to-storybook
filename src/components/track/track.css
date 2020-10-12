@@ -1,11 +1,4 @@
-/* for demo purposes */
-.artist {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-}
-
-li {
+.track {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,52 +6,64 @@ li {
   height: 60px;
 }
 
-li > img {
+.artist {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  position: relative;
   margin-right: 15px;
 }
 
-li > img:last-child {
-  align-self: flex-end;
+.artist::after {
+  background-color: #272b36;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
-li > div {
+.albumInformation {
   height: 100%;
   flex-grow: 1;
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
-  height: 100%;
-}
-
-button:focus {
-  outline: none;
-}
-
-button > img {
-  width: 22px;
-  height: 22px;
-}
-
-span {
+.albumInformation > span {
   display: block;
 }
 
-div > span:nth-child(1) {
+.albumInformation > span:nth-child(1) {
   color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
 }
 
-div > span:nth-child(2) {
+.albumInformation > span:nth-child(2) {
   color: rgba(255, 255, 255, 0.28);
   font-size: 11px;
 }
-/* end demo */
+
+.playButton {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.playButton:focus {
+  outline: none;
+}
+
+.playButton > img {
+  width: 22px;
+  height: 22px;
+}

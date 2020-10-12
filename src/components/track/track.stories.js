@@ -2,4 +2,4 @@ import {createTrackElement} from "./track.js";
 
 export default { title: "Components/Track" };
 
-export const beatIt = () => createTrackElement();
+export const beatIt = () => createTrackElement("Michael Jackson", "Billie Jean");

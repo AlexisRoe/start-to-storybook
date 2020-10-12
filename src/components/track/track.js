@@ -2,10 +2,7 @@ import "./track.css";
 import imageDog from "../../assets/dog.jpg";
 import playIcon from "../../assets/icon-play-color.svg";
 
-export function createTrackElement() {
-    const artist = "Michael Jackson";
-    const title = "Billie Jean";
-
+export function createTrackElement(artist, title) {
     /* Container */
     const listItem = document.createElement("li");
     listItem.classList.add("track");

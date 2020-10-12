@@ -39,6 +39,8 @@ export function createTrackElement() {
 
     playButton.appendChild(playImage);
     listItem.appendChild(playButton);
+
+    playButton.onclick = () => console.log("click");
     
     return listItem;
 }

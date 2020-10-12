@@ -5,6 +5,7 @@ export function createTrackElement() {
 
     const imgArtist = document.createElement("img");
     imgArtist.src = imageDog;
+    imgArtist.classList.add("artist");
 
     listItem.appendChild(imgArtist);
 

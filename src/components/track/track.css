@@ -1,0 +1,17 @@
+/* for demo purposes */
+.artist {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li * {
+  margin: 0px 1rem;
+}
+/* end demo */

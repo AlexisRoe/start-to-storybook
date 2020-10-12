@@ -1,8 +1,10 @@
+import imageDog from "../../assets/dog.jpg";
+
 export function createTrackElement() {
     const listItem = document.createElement("li");
 
     const imgArtist = document.createElement("img");
-    imgArtist.src = "../../assets/icon-menu-paint.svg";
+    imgArtist.src = imageDog;
 
     listItem.appendChild(imgArtist);
 
@@ -11,14 +13,16 @@ export function createTrackElement() {
     artist.innerHTML = "Some Artist";
     const album = document.createElement("span");
     album.innerHTML = "a album title";
+    const playButton = document.createElement("button");
+    playButton.type = "submit";
+    playButton.innerHTML = "Play";
 
     songContainer.appendChild(artist);
     songContainer.appendChild(album);
-    const playButton = document.createElement("button");
-    
     songContainer.appendChild(playButton);
 
     listItem.appendChild(songContainer);
 
     return listItem;
 }
+

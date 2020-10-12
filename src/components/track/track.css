@@ -11,20 +11,21 @@
   height: 46px;
   border-radius: 50%;
   margin-right: 15px;
-  position: relative;
   background-color: #aaa;
+  border: 1px solid rgba(255,255,255, .05);
+  position: relative;
 }
 
 .artist::after {
   content: "";
   position: absolute;
   background-color: #272b36;
-  background-color: red;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  top: 10px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 

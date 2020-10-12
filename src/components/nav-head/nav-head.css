@@ -1,7 +1,6 @@
 .nav-top {
   height: 60px;
   width: 100%;
-  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,9 +12,12 @@
 }
 
 .nav-top__text {
-  display: block;
   text-align: center;
   width: 100%;
+}
+
+.nav-top__text--setting {
+  padding-right: 100px;
 }
 
 .nav-top__searchfield {

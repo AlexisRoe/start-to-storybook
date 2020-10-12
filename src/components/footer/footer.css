@@ -6,6 +6,9 @@
   padding: 20px 15px;
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .footer-nav-item {

@@ -13,7 +13,7 @@ export function createTrackElement() {
     const imgArtist = document.createElement("img");
     imgArtist.src = imageDog; // for demo purposes
     imgArtist.alt = `artist - ${artist}`;
-    imgArtist.classList.add("artist"); // add class of name artist to image
+    imgArtist.classList.add("imgArtist"); // add class of name artist to image
 
     listItem.appendChild(imgArtist);
 

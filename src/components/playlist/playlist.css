@@ -1,3 +1,7 @@
+/* 
+* simple approach with filter and different divs-level
+* backdrop-filter doesnt work with Firefox
+*/
 .playlist-container,
 .playlist-container-bg {
   position: relative;
@@ -70,7 +74,8 @@
   position: absolute;
 }
 
-.span-1, .span-2 {
+.span-1,
+.span-2 {
   display: block;
 }
 

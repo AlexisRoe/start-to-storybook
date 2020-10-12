@@ -13,20 +13,7 @@
   margin-right: 15px;
   background-color: #aaa;
   border: 1px solid rgba(255,255,255, .05);
-  position: relative;
-}
-
-.artist::after {
-  content: "";
-  position: absolute;
-  background-color: #272b36;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  mask-image: radial-gradient(circle farthest-side at center, transparent 10px, white 10px);
 }
 
 .albumInformation {

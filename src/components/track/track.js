@@ -37,7 +37,10 @@ export function createTrackElement(track) {
     playButton.appendChild(playImage);
     listItem.appendChild(playButton);
 
-    playButton.onclick = () => console.log("click");
+    const audioElement = new Audio(track.audioSrc);
+    playButton.onclick = function() {
+        audioElement.play();
+    };
     
     return listItem;
 }

@@ -1,31 +1,31 @@
 import "./track.css";
-import imageDog from "../../assets/dog.jpg";
 import playIcon from "../../assets/icon-play-color.svg";
 
-export function createTrackElement(artist, title) {
+/* export function createTrackElement(artist, album, albumImageSource) { */
+export function createTrackElement(track) {
     /* Container */
     const listItem = document.createElement("li");
     listItem.classList.add("track");
 
-    // artist picture
-    const imgArtist = document.createElement("img");
-    imgArtist.src = imageDog; // for demo purposes
-    imgArtist.alt = `artist - ${artist}`;
-    imgArtist.classList.add("imgArtist");
+    // album picture
+    const imgTrack = document.createElement("img");
+    imgTrack.src = track.trackImageSource;
+    imgTrack.alt = `artist - ${track.artist}`;
+    imgTrack.classList.add("imgTrack");
 
-    listItem.appendChild(imgArtist);
+    listItem.appendChild(imgTrack);
 
     // metadata
-    const albumInformation = document.createElement("div");
-    albumInformation.classList.add ("albumInformation");
-    const albumSpan = document.createElement("span");
-    albumSpan.innerHTML = title;
+    const trackDescription = document.createElement("div");
+    trackDescription.classList.add ("trackDescription");
+    const titleSpan = document.createElement("span");
+    titleSpan.innerHTML = track.title;
     const artistSpan = document.createElement("span");
-    artistSpan.innerHTML = artist;
+    artistSpan.innerHTML = track.artist;
     
-    albumInformation.appendChild(albumSpan);
-    albumInformation.appendChild(artistSpan);
-    listItem.appendChild(albumInformation);
+    trackDescription.appendChild(titleSpan);
+    trackDescription.appendChild(artistSpan);
+    listItem.appendChild(trackDescription);
 
     // play-button
     const playButton = document.createElement("button");

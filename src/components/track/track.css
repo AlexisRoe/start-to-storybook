@@ -6,17 +6,18 @@
   width: 350px;
 }
 
-.imgArtist {
+.imgTrack {
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
+  object-fit: cover;
   margin-right: 1rem;
   background-color: #aaa;
   border: 1px solid rgba(255,255,255, .05);
   mask-image: radial-gradient(circle at center, transparent 30%, white 10%);
 }
 
-.albumInformation {
+.trackDescription {
   height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -24,18 +25,19 @@
   justify-content: center;
 }
 
-.albumInformation > span {
+.trackDescription > span {
   display: block;
 }
 
-.albumInformation > span:nth-child(1) {
+.trackDescription > span:nth-child(1) {
   color: rgba(255, 255, 255, 0.6);
   font-size: .8rem;
 }
 
-.albumInformation > span:nth-child(2) {
+.trackDescription > span:nth-child(2) {
   color: rgba(255, 255, 255, 0.28);
   font-size: .7rem;
+  margin-bottom: .8rem;
 }
 
 .playButton {
@@ -44,9 +46,6 @@
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
-}
-
-.playButton:focus {
   outline: none;
 }
 

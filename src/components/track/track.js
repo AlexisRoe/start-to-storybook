@@ -1,6 +1,6 @@
 import "./track.css";
 import playIcon from "../../assets/icon-play-color.svg";
-import pauseIcon from "../../assets/icon-pause-whiteblack.svg";
+import pauseIcon from "../../assets/icon-pause-gradient.svg";
 
 /* export function createTrackElement(artist, album, albumImageSource) { */
 export function createTrackElement(track) {

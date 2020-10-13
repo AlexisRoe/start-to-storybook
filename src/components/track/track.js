@@ -1,5 +1,6 @@
 import "./track.css";
 import playIcon from "../../assets/icon-play-color.svg";
+import pauseIcon from "../../assets/icon-pause-whiteblack.svg";
 
 /* export function createTrackElement(artist, album, albumImageSource) { */
 export function createTrackElement(track) {
@@ -39,7 +40,16 @@ export function createTrackElement(track) {
 
     const audioElement = new Audio(track.audioSrc);
     playButton.onclick = function() {
-        audioElement.play();
+        if (track.audioSrc == null) {
+            alert("no sound file added");
+        };
+        if (audioElement.paused === true) {
+            audioElement.play();
+            playImage.src = pauseIcon;
+        } else {
+            audioElement.pause();
+            playImage.src = playIcon;
+        }
     };
     
     return listItem;

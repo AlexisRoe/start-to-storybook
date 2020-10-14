@@ -3,7 +3,11 @@ import dog from "../../assets/dog.jpg";
 
 export default { title: "Components/Track" };
 
-export const beatIt = () => createTrackElement({artist: "Michael Jackson", title: "Billie Jean", trackImageSource: dog});
+export const beatIt = () => createTrackElement({
+    artist: "Michael Jackson", 
+    title: "Billie Jean", 
+    trackImageSource: dog
+});
 
 // give a object to function call
 export const christmasAdventure = () => createTrackElement({

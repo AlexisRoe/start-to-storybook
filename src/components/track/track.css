@@ -1,9 +1,13 @@
+.container {
+  width: 350px;
+}
+
 .track {
   display: grid;
   align-items: center;
   grid-template: auto / auto 1fr auto;
-  /* for test purpose */
-  width: 350px;
+  padding: 5px;
+  width: 100%;
 }
 
 .imgTrack {
@@ -37,7 +41,6 @@
 .trackDescription > span:nth-child(2) {
   color: rgba(255, 255, 255, 0.28);
   font-size: .7rem;
-  margin-bottom: .8rem;
 }
 
 .playButton {

@@ -38,6 +38,8 @@ export function createTrackElement(track) {
     playButton.appendChild(playImage);
     listItem.appendChild(playButton);
 
+    // my own concept of play and pause
+    /*
     const audioElement = new Audio(track.audioSrc);
     playButton.onclick = function() {
         if (track.audioSrc == null) {
@@ -51,7 +53,14 @@ export function createTrackElement(track) {
             playImage.src = playIcon;
         }
     };
-    
+    */
+
+    // official tutor setting
+    const audioElement = new Audio(track.audioSrc);
+    playButton.onclick = function() {
+        audioElement.play();
+    };
+
     return listItem;
 }
 

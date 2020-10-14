@@ -4,61 +4,74 @@ import pauseIcon from "../../assets/icon-pause-gradient.svg";
 
 /* export function createTrackElement(artist, album, albumImageSource) { */
 export function createTrackElement(track) {
+    /* allgemeine Funktionen */
+    
+    const setImgProperties = (img, imgSrc, imgAlt, imgClass) => {
+        img.src = imgSrc;
+        img.alt = imgAlt;
+        if (imgClass !== undefined) {
+            img.classList.add(imgClass);
+        };
+    };
+
+    const createSpan = (parent, content) => {
+        const span = document.createElement("span");
+        span.innerHTML = content;
+        parent.appendChild(span);
+    };
+
+    const createComponent = (typeComponent, classComponent) => {
+        const item = document.createElement(typeComponent);
+        if (classComponent !== undefined) {
+            item.classList.add(classComponent);
+        };
+        
+        return item;
+    };
+
     /* Container */
-    const listItem = document.createElement("li");
-    listItem.classList.add("track");
+    const listItem = createComponent("li", "track");
 
     // album picture
-    const imgTrack = document.createElement("img");
-    imgTrack.src = track.trackImageSource;
-    imgTrack.alt = `artist - ${track.artist}`;
-    imgTrack.classList.add("imgTrack");
-
-    listItem.appendChild(imgTrack);
+    const trackImage = document.createElement("img");
+    setImgProperties(trackImage, track.trackImageSource,  `artist - ${track.artist}`, "imgTrack")
+    listItem.appendChild(trackImage);
 
     // metadata
-    const trackDescription = document.createElement("div");
-    trackDescription.classList.add ("trackDescription");
-    const titleSpan = document.createElement("span");
-    titleSpan.innerHTML = track.title;
-    const artistSpan = document.createElement("span");
-    artistSpan.innerHTML = track.artist;
-    
-    trackDescription.appendChild(titleSpan);
-    trackDescription.appendChild(artistSpan);
+    const trackDescription = createComponent("div", "trackDescription");
+    createSpan(trackDescription, track.title );
+    createSpan(trackDescription, track.artist );
+
     listItem.appendChild(trackDescription);
 
     // play-button
-    const playButton = document.createElement("button");
+    const playButton = createComponent("button", "playButton");
     playButton.type = "submit";
-    playButton.classList.add("playButton");
     const playImage = document.createElement("img");
-    playImage.src = playIcon;
-
+    setImgProperties(playImage, playIcon, `play ${track.title}`);
     playButton.appendChild(playImage);
+    
     listItem.appendChild(playButton);
 
     // my own concept of play and pause
-    /*
     const audioElement = new Audio(track.audioSrc);
-    playButton.onclick = function() {
-        if (track.audioSrc == null) {
-            alert("no sound file added");
-        };
-        if (audioElement.paused === true) {
+
+    playButton.onclick = () => {
+        if (audioElement.paused) {
             audioElement.play();
-            playImage.src = pauseIcon;
+            setImgProperties(playImage, pauseIcon, "pause music");
         } else {
             audioElement.pause();
-            playImage.src = playIcon;
+            setImgProperties(playImage, playIcon, `play ${track.title}`);
         }
-    };
-    */
 
-    // official tutor setting
-    const audioElement = new Audio(track.audioSrc);
-    playButton.onclick = function() {
-        audioElement.play();
+        /* 
+        * let isPlaying = false;
+        * isPlaying != isPlaying;
+        * -- Console ---
+        * isPlaying ergibt true
+        * != negiert den Wert innerhalb einer Variable
+        */
     };
 
     return listItem;

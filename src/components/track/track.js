@@ -4,14 +4,11 @@ import pauseIcon from "../../assets/icon-pause-gradient.svg";
 
 /* export function createTrackElement(artist, album, albumImageSource) { */
 export function createTrackElement(track) {
-    /* allgemeine Funktionen */
-    
-    const setImgProperties = (img, imgSrc, imgAlt, imgClass) => {
+
+    const setImgProperties = (img, imgSrc, imgAlt, imgClassName = "") => {
         img.src = imgSrc;
         img.alt = imgAlt;
-        if (imgClass !== undefined) {
-            img.classList.add(imgClass);
-        };
+        img.className = imgClassName;
     };
 
     const createSpan = (parent, content) => {
@@ -20,11 +17,9 @@ export function createTrackElement(track) {
         parent.appendChild(span);
     };
 
-    const createComponent = (typeComponent, classComponent) => {
+    const createComponent = (typeComponent, classComponentName = "") => {
         const item = document.createElement(typeComponent);
-        if (classComponent !== undefined) {
-            item.classList.add(classComponent);
-        };
+        item.className = classComponentName;
         
         return item;
     };
@@ -34,7 +29,7 @@ export function createTrackElement(track) {
 
     // album picture
     const trackImage = document.createElement("img");
-    setImgProperties(trackImage, track.trackImageSource,  `artist - ${track.artist}`, "imgTrack")
+    setImgProperties(trackImage, track.trackImageSource, `artist - ${track.artist}`, "imgTrack")
     listItem.appendChild(trackImage);
 
     // metadata
@@ -47,6 +42,7 @@ export function createTrackElement(track) {
     // play-button
     const playButton = createComponent("button", "playButton");
     playButton.type = "submit";
+
     const playImage = document.createElement("img");
     setImgProperties(playImage, playIcon, `play ${track.title}`);
     playButton.appendChild(playImage);
@@ -64,14 +60,6 @@ export function createTrackElement(track) {
             audioElement.pause();
             setImgProperties(playImage, playIcon, `play ${track.title}`);
         }
-
-        /* 
-        * let isPlaying = false;
-        * isPlaying != isPlaying;
-        * -- Console ---
-        * isPlaying ergibt true
-        * != negiert den Wert innerhalb einer Variable
-        */
     };
 
     return listItem;

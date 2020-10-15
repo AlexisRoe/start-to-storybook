@@ -1,0 +1,92 @@
+/* 
+* simple approach with filter and different divs-level
+* backdrop-filter doesnt work with Firefox
+*/
+.playlist-container,
+.playlist-container-bg {
+  position: relative;
+  /* for testing purpose - 100% for real */
+  width: 188px;
+  height: 128px;
+}
+
+.playlist-background {
+  background-color: #aaa;
+  background-image: url(../../assets/playlist-img/marcela-laskoski-YrtFlrLo2DQ-unsplash.png);
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.playlist-info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10px 10px 20px;
+}
+.playlist-info__text > * {
+  display: block;
+}
+
+.playlist-info__text > span:nth-child(1) {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.28px;
+}
+.playlist-info__text > span:nth-child(2) {
+  font-size: 0.6rem;
+  color: #c1c0c0;
+  letter-spacing: 0.22px;
+}
+
+.playlist-info__button {
+  background: none;
+  border: none;
+}
+
+/* modified to use with before element */
+
+.playlist-container-bg {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10px 10px 20px;
+}
+
+.playlist-container-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/playlist-img/marcela-laskoski-YrtFlrLo2DQ-unsplash.png);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.playlist-info__text--pseudo {
+  position: absolute;
+}
+
+.span-1,
+.span-2 {
+  display: block;
+}
+
+.span-1 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.28px;
+}
+
+.span-2 {
+  font-size: 0.6rem;
+  color: #c1c0c0;
+  letter-spacing: 0.22px;
+}

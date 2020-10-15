@@ -42,7 +42,6 @@ export function createTrackElement(track) {
                 }),
                 createElement("button", {
                     className: "playButton",
-                    type: "submit",
                     children: [buttonIcon],
                     onclick: () => {
                         if (audioElement.paused) {

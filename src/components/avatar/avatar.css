@@ -1,5 +1,14 @@
-.avatar {
-  border-radius: 50%;
+.avatarContainer {
+  position: relative;
   height: 100px;
   width: 100px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* clip:rect(100px 100px 100px 100px); */
+  mask-image: radial-gradient(circle farthest-side at center, transparent 14px, white 14px);
 }

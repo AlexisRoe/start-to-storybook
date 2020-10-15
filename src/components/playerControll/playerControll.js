@@ -52,10 +52,10 @@ export const createPlayer = (track) => {
                                             onclick: () => {
                                                 if (audioElement.paused) {
                                                     audioElement.play();
-                                                    setImgProperties(playIcon, playerIconPause, "Pause music");
+                                                    changeImgAttributes(playIcon, playerIconPause, "Pause music");
                                                 } else {
                                                     audioElement.pause();
-                                                    setImgProperties(playIcon, playerIconPlay, iconAlttext);
+                                                    changeImgAttributes(playIcon, playerIconPlay, iconAlttext);
                                                 }
                                             },
                                             children: [playIcon],
@@ -199,7 +199,7 @@ export const createPlayer = (track) => {
     return player;
 };
 
-const setImgProperties = (img, imgSrc, imgAlt) => {
+const changeImgAttributes = (img, imgSrc, imgAlt) => {
     img.src = imgSrc;
     img.alt = imgAlt;
 };

@@ -44,7 +44,7 @@ const likes =
 },
 ];
 
-export const favoritenManagement = () => {
+export const haiku = () => {
 
     const container = document.createElement("div");
 

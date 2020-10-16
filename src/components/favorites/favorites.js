@@ -1,29 +1,58 @@
 import "./favorites.css";
 
 import { createElement } from "../../utilities/element";
-import { storageAvailable } from "../../utilities/element";
+import { storageAvailable } from "../../utilities/testStorage";
 
 import heartOrange from "../../assets/favorite/heart-orange.svg";
 import heartBlue from "../../assets/favorite/heart-blue.svg";
 import heartPink from "../../assets/favorite/heart-pink.svg";
 import heartYellow from "../../assets/favorite/heart-yellow.svg";
 import heartGreen from "../../assets/favorite/heart-green.svg";
+import trashCan from "../../assets/favorite/delete_forever-24px.svg";
 
-// import { doc } from "prettier";
-
-
-console.log(storageAvailable("localStorage"));
 
 function heartCounter(event) {
-    localStorage.setItem('heart-type', event.target.alt);
-    document.querySelector("#scoreboard").value = 
-    `** SCOREBOARD **
-        ${event.target.alt}: 1 
-        irgendwas: 2
-        tada: 3
-        Blabla: 4
-        Tada: 5`;
+    const keyColor = event.target.alt;
+    
+    if (storageAvailable("localStorage")) {
+        if (localStorage.getItem(keyColor)) { // if keyColor exists
+            const oldCount = Number(localStorage.getItem(keyColor)); // get old value in storage
+            const newCount = oldCount + 1; // increase counter
+            localStorage.setItem(keyColor, newCount); 
+            console.log(`value: ${keyColor} found and increased by 1`);
+        } else {
+            localStorage.setItem(keyColor, "1");
+            console.log(`value: ${keyColor} set`);
+        }
+    } else {
+        console.log(`localStorage disabled`);
+    }
+    scoreboard();
 };
+
+function scoreboard() {
+    let scoreboard = "** SCOREBOARD **\n";
+
+    if (storageAvailable("localStorage")) {
+        if (Object.keys(localStorage).length === 0) {
+            scoreboard = `${scoreboard} no scores available`;
+        } else {
+            Object.getOwnPropertyNames(localStorage).forEach( keyColor => {
+                scoreboard = scoreboard + "\n" + `${keyColor}: ${localStorage[keyColor]}`;
+            });
+        };
+    } else {
+        console.log(`localStorage disabled`);
+    }
+    document.querySelector("#scoreboard").value = scoreboard;
+};
+
+function cleanStorage() {
+    localStorage.clear();
+    document.querySelector("#scoreboard").value = "** SCOREBOARD **\n";
+    console.log("Storage clear");
+};
+
 
 export function createFavorites () {
 
@@ -37,38 +66,47 @@ export function createFavorites () {
                 [
                     createElement("img", {
                         src: heartOrange,
-                        alt: "orange",
+                        alt: "orange-hearth",
                         onclick: (event) => {
                             heartCounter(event);
                         },
                     }),
                     createElement("img", {
                         src: heartBlue,
-                        alt: "blue",
+                        alt: "blue-hearth",
                         onclick: (event) => {
                             heartCounter(event);
                         },
                     }),
                     createElement("img", {
                         src: heartPink,
-                        alt: "pink",
+                        alt: "pink-hearth",
                         onclick: (event) => {
                             heartCounter(event);
                         },
                     }),
                     createElement("img", {
                         src: heartYellow,
-                        alt: "yellow",
+                        alt: "yellow-hearth",
                         onclick: (event) => {
                             heartCounter(event);
                         },
                     }),
                     createElement("img", {
                         src: heartGreen,
-                        alt: "green",
+                        alt: "green-hearth",
                         onclick: (event) => {
                             heartCounter(event);
                         },
+                    }),
+                    createElement("img", {
+                        id: "trash",
+                        src: trashCan,
+                        alt: "Delete everything!",
+                        onclick: () => {
+                            cleanStorage();
+                        },
+
                     }),
                 ],
             }),

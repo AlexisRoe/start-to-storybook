@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10">
+  <g id="Gruppe_2070" data-name="Gruppe 2070" transform="translate(-237 -705)">
+    <g id="Gruppe_2068" data-name="Gruppe 2068" transform="translate(237 705)">
+      <g id="Gruppe_2065" data-name="Gruppe 2065" transform="translate(7)">
+        <path id="Polygon_4" data-name="Polygon 4" d="M4.152,1.357a1,1,0,0,1,1.7,0l3.2,5.113A1,1,0,0,1,8.2,8H1.8A1,1,0,0,1,.956,6.47Z" transform="translate(0 10) rotate(-90)" fill="#e2e2e2"/>
+      </g>
+      <g id="Gruppe_2066" data-name="Gruppe 2066">
+        <path id="Polygon_4-2" data-name="Polygon 4" d="M4.152,1.357a1,1,0,0,1,1.7,0l3.2,5.113A1,1,0,0,1,8.2,8H1.8A1,1,0,0,1,.956,6.47Z" transform="translate(0 10) rotate(-90)" fill="#e2e2e2"/>
+      </g>
+    </g>
+    <line id="Linie_191" data-name="Linie 191" y2="9" transform="translate(237.5 705.5)" fill="none" stroke="#e2e2e2" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

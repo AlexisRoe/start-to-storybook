@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="heart-empty.svg"
+   id="svg2026"
+   version="1.1"
+   viewBox="0 0 12.47 10.46"
+   height="10.46"
+   width="12.47">
+  <metadata
+     id="metadata2030">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="svg2026"
+     inkscape:window-maximized="0"
+     inkscape:window-y="60"
+     inkscape:window-x="64"
+     inkscape:cy="5.23"
+     inkscape:cx="6.2350001"
+     inkscape:zoom="57.170172"
+     showgrid="false"
+     id="namedview2028"
+     inkscape:window-height="856"
+     inkscape:window-width="1491"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs2020">
+    <linearGradient
+       id="linearGradient2597"
+       inkscape:collect="always">
+      <stop
+         id="stop2593"
+         offset="0"
+         style="stop-color:#d9519d;stop-opacity:1" />
+      <stop
+         id="stop2595"
+         offset="1"
+         style="stop-color:#ed8770;stop-opacity:1" />
+    </linearGradient>
+    <style
+       id="style2018">.a{fill:none;stroke:#ee5a30;}</style>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="36.144497"
+       x2="5.7079935"
+       y1="45.502522"
+       x1="5.7969899"
+       id="linearGradient2599"
+       xlink:href="#linearGradient2597"
+       inkscape:collect="always" />
+  </defs>
+  <g
+     style="stroke:url(#linearGradient2599)"
+     id="g2024"
+     transform="translate(0.5 -35.025)">
+    <path
+       style="stroke:url(#linearGradient2599)"
+       id="path2022"
+       transform="translate(0 0)"
+       d="M8.35,35.525a3.135,3.135,0,0,1,3.12,3.12c0,3.15-5.735,6.27-5.735,6.27S0,41.749,0,38.645a3.12,3.12,0,0,1,3.12-3.12h0a3.089,3.089,0,0,1,2.615,1.407A3.12,3.12,0,0,1,8.35,35.525Z"
+       class="a" />
+  </g>
+</svg>
